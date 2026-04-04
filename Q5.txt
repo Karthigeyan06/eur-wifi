@@ -1,0 +1,17 @@
+5. Difference Between Bridge Mode and Repeater Mode
+Bridge Mode:
+
+Bridge mode is used to connect two separate networks together at Layer 2
+The device operating in bridge mode does not create a new wireless network for end users
+It links one network segment to another, commonly used to wirelessly connect two buildings or two routers
+Full bandwidth is maintained because it is a dedicated link between two network points
+It does not cut the available bandwidth in half
+Example: Connecting the network of two office floors wirelessly using two APs in bridge mode
+
+Repeater Mode:
+
+Repeater mode is used to extend the coverage area of an existing Wi-Fi network
+The repeater receives the Wi-Fi signal from the main AP and retransmits it to cover dead zones
+It uses the same SSID as the original network, so clients see it as the same network
+The major drawback is that bandwidth is typically reduced by nearly half, since the repeater uses the same channel to both receive and retransmit
+Example: Placing a range extender in a hallway to cover a far bedroom that has a weak signal
