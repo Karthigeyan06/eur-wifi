@@ -1,0 +1,44 @@
+10. Wi-Fi Topologies and Their Use Cases
+Infrastructure Mode (BSS):
+
+The most common Wi-Fi topology where all client devices connect through a central Access Point
+The AP manages all communication; clients do not talk to each other directly
+Use cases: Home networks, office networks, cafes, and retail stores
+
+Extended Service Set (ESS):
+
+Multiple Access Points are connected via a wired Ethernet backbone and broadcast the same SSID
+Allows users to roam across a large area without losing connectivity
+Use cases: University campuses, hospitals, shopping malls, airports, and large corporate offices
+
+Ad-Hoc Mode (IBSS – Independent BSS):
+
+Devices connect directly to each other without any Access Point in between
+It is a peer-to-peer wireless network
+Use cases: Temporary file sharing between two laptops, emergency communication networks where no infrastructure exists
+
+Mesh Network:
+
+Multiple APs (called mesh nodes) communicate wirelessly with each other using a backhaul radio, forming a self-healing network
+There is no need for wired connections between nodes
+Use cases: Large homes with multiple floors, smart city Wi-Fi deployments, outdoor public Wi-Fi coverage
+
+Wi-Fi Direct:
+
+Two devices connect directly to each other without a router or AP, similar to Bluetooth but much faster
+Use cases: Wireless printing, screen mirroring (Miracast), fast file transfer between phones and laptops
+
+Mobile Hotspot:
+
+A smartphone or dedicated device acts as a portable AP by sharing its cellular data connection over Wi-Fi
+Use cases: Internet access while travelling, sharing data when fixed broadband is unavailable
+
+Point-to-Point (PtP):
+
+Two directional APs are aimed at each other to create a dedicated wireless link between two fixed locations
+Use cases: Connecting two office buildings across a street or campus without laying fiber cables
+
+Point-to-Multipoint (PtMP):
+
+One central AP or tower broadcasts to multiple remote APs or client devices spread across a wide area
+Use cases: Rural broadband distribution by Wireless ISPs (WISPs), connecting multiple branch offices to a central hub

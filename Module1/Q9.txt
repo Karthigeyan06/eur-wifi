@@ -1,0 +1,10 @@
+9. Types of Wi-Fi Internet Connectivity Backhaul
+Types of Backhaul used in Wireless Internet Connectivity:
+
+Fiber Optic Backhaul: The most common and fastest type where data travels as light pulses through glass fiber cables. Provides very high bandwidth and low latency. Used by ISPs like Jio Fiber and BSNL FTTH.
+DSL (Digital Subscriber Line): Uses existing copper telephone lines to carry internet data. Slower than fiber and speed degrades with distance from the exchange. Common in older residential areas.
+Cable (DOCSIS): Uses coaxial cable TV infrastructure to deliver internet. Faster than DSL but bandwidth is shared among users in the same area.
+4G/LTE Backhaul: Uses cellular towers to carry internet traffic wirelessly. Common in rural and semi-urban areas where fiber is not available. Used as primary or backup backhaul.
+5G Fixed Wireless Access (FWA): A 5G tower transmits internet wirelessly to a fixed CPE (Customer Premises Equipment) device at home or office. Emerging alternative to fiber in urban areas.
+Microwave Point-to-Point: Uses licensed microwave frequency links between two towers or buildings to carry data. Used by telecom companies to connect remote towers to the core network.
+Satellite Backhaul: Internet is delivered via satellites in orbit. LEO (Low Earth Orbit) satellites like Starlink offer lower latency. Used in remote and mountainous areas.

@@ -1,0 +1,16 @@
+8. Difference Between IEEE and WFA
+IEEE – Institute of Electrical and Electronics Engineers:
+
+IEEE is an international, non-profit technical standards organization made up of engineers, researchers, and academics
+It is responsible for creating and publishing the official technical specifications for Wi-Fi under the 802.11 standard family
+IEEE defines how Wi-Fi physically works — the modulation, frequencies, frame formats, channel access methods, and security protocols at a deep technical level
+Examples of IEEE work include 802.11a, 802.11n, 802.11ac, and 802.11ax
+IEEE does not test or certify any products; it only defines the standards
+
+WFA – Wi-Fi Alliance:
+
+The Wi-Fi Alliance is a global non-profit industry consortium made up of major technology companies like Apple, Intel, Qualcomm, Cisco, and Samsung
+Its primary role is to certify that Wi-Fi products from different manufacturers are interoperable with each other
+WFA created the consumer-friendly branding we use today, such as Wi-Fi 4, Wi-Fi 5, Wi-Fi 6, and Wi-Fi 7
+It also developed and certifies security programs like WPA, WPA2, and WPA3
+A product that passes WFA testing earns the "Wi-Fi CERTIFIED" mark, assuring consumers of compatibility
