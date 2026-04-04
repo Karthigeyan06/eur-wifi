@@ -1,6 +1,0 @@
-
-1. In which OSI layer does the Wi-Fi standard/protocol fit?
-Wi-Fi (IEEE 802.11) operates at two layers of the OSI model:
-
-Layer 1 – Physical Layer (PHY): Handles radio frequency transmission, modulation (OFDM, DSSS), signal encoding, and frequency bands (2.4 GHz / 5 GHz / 6 GHz).
-Layer 2 – Data Link Layer (MAC sub-layer): Handles MAC addressing, CSMA/CA (collision avoidance), frame formatting, association, and authentication with the Access Point.
