@@ -1,0 +1,6 @@
+9. What happens to a wireless client connected to a Lightweight AP in local mode if the WLC goes down
+In local mode, a Lightweight AP is fully dependent on the WLC for all operations. The CAPWAP tunnel carries both control traffic and client data back to the WLC. When the WLC goes down, the AP loses its control tunnel and cannot function normally.
+What happens is that the AP will detect the loss of connection through missed heartbeat responses. After the timeout period, the AP will disassociate all currently connected clients and stop broadcasting its SSIDs.
+The AP essentially goes offline from the client's perspective. Existing client sessions are dropped, and no new clients can connect because the AP cannot authenticate users or forward traffic without the WLC.
+The AP will then begin the discovery process to find an available secondary or backup WLC if one is configured. If a standby WLC is reachable, the AP will join it and resume operations, and clients can reconnect.
+However, if no backup WLC is available, the AP remains unable to serve clients until the primary WLC comes back online. This is the fundamental limitation of local mode, and it is why FlexConnect mode is preferred for sites where the WLC is remote or where continuous local connectivity is a requirement even during WAN or controller failures.
