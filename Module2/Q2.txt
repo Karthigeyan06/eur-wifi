@@ -1,0 +1,6 @@
+2. Describe CAPWAP and explain the flow between AP and Controller
+CAPWAP stands for Control And Provisioning of Wireless Access Points. It is a standardized protocol defined in RFC 5415 that allows a Wireless LAN Controller to manage, configure, and control multiple APs across a network.
+It replaced an older proprietary protocol called LWAPP (Lightweight Access Point Protocol) and is vendor-neutral.
+The flow between the AP and controller works as follows. When an AP powers on, it has no configuration of its own.
+It first tries to discover a WLC using methods like DHCP Option 43, DNS lookup, subnet broadcast, or a previously remembered controller address. Once a WLC is found, the AP and WLC go through a DTLS (Datagram Transport Layer Security) handshake to establish a secure connection. 
+After that, the AP joins the WLC, downloads its configuration including SSID, VLAN, and radio settings, and then begins serving wireless clients. All control messages and client data flow through the CAPWAP tunnel between the AP and WLC.
