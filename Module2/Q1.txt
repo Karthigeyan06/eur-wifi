@@ -1,0 +1,8 @@
+1. Brief about SplitMAC Architecture and how it improves the AP's performance
+SplitMAC architecture is a design where the MAC (Medium Access Control) layer functions are divided between the Access Point (AP) and the Wireless LAN Controller (WLC). 
+Instead of the AP handling all wireless functions on its own, responsibilities are split so that time-sensitive, real-time tasks stay at the AP while management and policy-related tasks are handled centrally at the WLC.
+The AP handles real-time functions such as beaconing, sending probe responses, acknowledging packets, encrypting and decrypting frames, and managing frame queuing. 
+The WLC takes care of non-real-time functions like client authentication, association handling, key management, QoS policy enforcement, and roaming decisions.
+This improves performance because the AP is no longer burdened with heavy processing tasks. It can dedicate its resources entirely to radio-level operations, which are time-critical.
+The WLC, being centralized, can enforce consistent policies across all APs, make smarter roaming decisions, and perform RF optimization like adjusting transmit power and channels dynamically. 
+APs also become simpler and cheaper since they don't need powerful hardware to handle complex logic.
