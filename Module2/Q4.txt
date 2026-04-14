@@ -1,0 +1,7 @@
+4. What is the difference between Lightweight APs and Cloud-based APs
+Lightweight APs are access points that are managed and controlled by an on-premises Wireless LAN Controller.
+They have no standalone intelligence and depend entirely on the WLC for configuration, authentication policies, and management. 
+The WLC must be physically present in the network, either as a hardware appliance or a virtual machine. All CAPWAP tunnels terminate at this local controller.
+This model gives IT teams direct control over the infrastructure but requires capital investment in controller hardware and ongoing maintenance.
+Cloud-based APs, on the other hand, are managed through a cloud-hosted management platform such as Cisco Meraki or Aruba Central. The AP still performs local data forwarding but receives its configuration and monitoring from a cloud dashboard over the internet.
+There is no need for a physical on-premises controller. The management plane lives in the cloud, while data can be forwarded locally. This model is easier to deploy and scale, requires less on-site hardware, and is well-suited for distributed locations or organizations that prefer a subscription-based operational model.
