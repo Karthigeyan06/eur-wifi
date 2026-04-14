@@ -1,0 +1,7 @@
+6. Difference between Sniffer mode and Monitor mode, use case for each
+Both Sniffer mode and Monitor mode are special AP modes used for wireless analysis, but they serve different purposes.
+In Sniffer mode, the AP captures raw 802.11 wireless packets from the air and forwards them to an external packet analysis tool such as Wireshark running on a remote PC. 
+The AP acts like a wireless packet capture device. The captured frames include all the 802.11 header details and payloads. This mode is used when an engineer needs to do deep packet inspection, troubleshoot a specific client connection issue, or analyze protocol-level behavior on a particular channel.
+In Monitor mode, the AP does not serve any wireless clients at all. Instead, it continuously scans all channels looking for rogue APs, unauthorized devices, interference sources, and security threats.
+It sends this information back to the WLC for analysis. This mode is used for wireless intrusion detection, rogue AP containment, and RF spectrum monitoring across the network. 
+The key difference is that Sniffer mode is for capturing and analyzing traffic, while Monitor mode is for scanning and security surveillance of the wireless environment.
