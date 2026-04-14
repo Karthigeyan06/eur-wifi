@@ -1,0 +1,6 @@
+7. If WLC is deployed in WAN, which AP mode is best for local network and how?
+When the WLC is located remotely across a WAN link, the best AP mode to use is FlexConnect mode (formerly known as Hybrid Remote Edge AP or H-REAP).
+In FlexConnect mode, the AP maintains its CAPWAP control tunnel with the remote WLC over the WAN for management purposes, but it is capable of switching client data traffic locally at the branch site without sending it all the way back to the WLC. This is called local switching. 
+This is critical because if all client data had to travel across the WAN to the WLC and back, it would create unnecessary latency, consume expensive WAN bandwidth, and make the network dependent on WAN availability for basic local communication.
+FlexConnect also supports a feature called standalone mode. If the WAN link goes down and the AP loses contact with the WLC, it can continue to serve already-authenticated clients locally using cached credentials and policies.
+This makes FlexConnect ideal for branch offices and remote sites where WAN reliability cannot be guaranteed but local connectivity must continue.
