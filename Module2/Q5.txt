@@ -1,0 +1,7 @@
+5. How the CAPWAP tunnel is maintained between AP and Controller
+Once the CAPWAP tunnel is established between an AP and the WLC, it is kept alive using a keepalive or heartbeat mechanism.
+The AP periodically sends echo request messages to the WLC over the control tunnel, and the WLC responds with echo replies.
+This exchange confirms that both sides are still reachable and the tunnel is healthy.
+If the WLC fails to respond to a certain number of consecutive echo requests within a defined timeout period, the AP considers the connection lost.
+Depending on its configured mode, the AP may then try to discover and join a backup or secondary WLC. The WLC also monitors the AP side and marks an AP as unresponsive if it stops receiving heartbeats.
+The DTLS session securing the control tunnel also has its own session maintenance. Overall, this heartbeat mechanism ensures that failures are detected quickly and the system can take corrective action, such as failing over to a redundant controller.
