@@ -1,0 +1,10 @@
+8. Challenges of deploying autonomous APs (more than 50) in a large network like a university
+Autonomous APs are self-contained access points where each AP is configured and managed individually. Deploying more than 50 of them in a large environment like a university creates significant operational and technical challenges.
+Managing each AP separately becomes extremely time-consuming. If a security policy, SSID, or VLAN configuration needs to change, an administrator must log in to every single AP and make the change manually or through basic scripts. 
+This does not scale well and increases the risk of configuration inconsistencies across the network.
+Roaming between autonomous APs is problematic. Since each AP operates independently, when a student walks from one building to another, the client has to fully re-authenticate with the new AP. 
+There is no centralized controller to coordinate seamless roaming, leading to dropped calls, interrupted video streams, and poor user experience.
+RF management is also a challenge. Without a central controller, there is no automated mechanism to detect channel conflicts, adjust transmit power, or balance client load across APs.
+Engineers must manually plan and configure RF settings for each AP. In a dense environment like a university campus, co-channel interference becomes a serious problem.
+Security enforcement is harder because each AP maintains its own security policies. Detecting and containing a rogue AP or an unauthorized user requires checking each AP individually. 
+There is no single point of visibility or control. Overall, autonomous APs are simply not designed for large-scale enterprise deployments and lack the centralized intelligence needed to manage a complex environment efficiently.
