@@ -1,0 +1,64 @@
+1. 802.11 PHY layer standards and comparison
+
+The IEEE 802.11 PHY standards define how wireless signals are transmitted over the air. Early standards like 802.11 (1997) used FHSS and DSSS with very low data rates (1–2 Mbps). 
+802.11b improved DSSS to reach up to 11 Mbps in the 2.4 GHz band. 802.11a introduced OFDM in the 5 GHz band, enabling up to 54 Mbps. 802.11g brought OFDM to 2.4 GHz with similar speeds.
+802.11n introduced MIMO and channel bonding (20/40 MHz), increasing throughput up to 600 Mbps. 802.11ac operates in 5 GHz with wider channels (up to 160 MHz) and MU-MIMO, achieving multi-Gbps speeds.
+802.11ax (Wi-Fi 6) uses OFDMA, better efficiency, and operates in both 2.4 and 5 GHz (and 6 GHz in Wi-Fi 6E), improving performance in dense environments.
+
+2. DSSS and FHSS
+
+DSSS (Direct Sequence Spread Spectrum) spreads data by multiplying it with a pseudo-random sequence, increasing bandwidth and resistance to interference.
+FHSS (Frequency Hopping Spread Spectrum) transmits data by rapidly switching frequencies in a predefined pattern, reducing interference and improving security. 
+DSSS provides higher data rates, while FHSS is more robust against narrowband interference.
+
+3. Modulation schemes in PHY layer
+
+Modulation converts digital data into radio signals. BPSK represents 1 bit per symbol, QPSK represents 2 bits, 16-QAM represents 4 bits, 64-QAM represents 6 bits, and 256-QAM represents 8 bits.
+Higher-order modulation increases data rate but requires better signal quality (higher SNR). Lower modulation schemes are more robust but slower.
+
+4. Significance of OFDM in WLAN
+
+OFDM divides a wide channel into multiple orthogonal subcarriers, transmitting data in parallel. This reduces interference, improves spectral efficiency, and handles multipath fading effectively. 
+It increases reliability and data rates in wireless environments.
+
+5. Frequency bands and channels in Wi-Fi
+
+Wi-Fi operates mainly in 2.4 GHz, 5 GHz, and 6 GHz bands.
+2.4 GHz has fewer channels and more interference but better range.
+5 GHz has more channels, less interference, and higher data rates but shorter range.
+6 GHz provides even more spectrum, supporting high throughput and low latency. Channels are divided into fixed bandwidths like 20, 40, 80, and 160 MHz.
+
+6. Guard Interval in WLAN
+
+Guard Interval (GI) is a small time gap between OFDM symbols to prevent inter-symbol interference caused by multipath.
+A shorter GI increases efficiency by reducing overhead, but it requires better channel conditions to avoid errors.
+
+7. Structure of 802.11 PHY frame
+
+The PHY frame consists of Preamble, Header, and Payload. The preamble is used for synchronization and channel estimation.
+The header carries transmission parameters like rate and length. The payload contains the actual data (MAC frame).
+
+8. OFDM vs OFDMA
+
+OFDM assigns all subcarriers to a single user at a time. OFDMA divides subcarriers among multiple users simultaneously.
+OFDMA improves efficiency and reduces latency in dense networks.
+
+9. MIMO vs MU-MIMO
+
+MIMO uses multiple antennas to improve data rate and reliability for a single user. MU-MIMO allows multiple users to receive data simultaneously using spatial streams, increasing overall network capacity.
+
+10. PPDU, PLCP, PMD
+
+PPDU (PLCP Protocol Data Unit) is the complete PHY frame transmitted over the air.
+PLCP (Physical Layer Convergence Protocol) prepares MAC data for transmission and adds headers.
+PMD (Physical Medium Dependent) handles actual signal transmission, modulation, and radio characteristics.
+
+11. Types of PPDU
+
+Different Wi-Fi generations define different PPDU formats such as Legacy PPDU, HT PPDU (802.11n), VHT PPDU (802.11ac), and HE PPDU (802.11ax). 
+Each adds new fields to support features like MIMO, wider channels, and OFDMA while maintaining backward compatibility.
+
+12. Data rate calculation
+
+Data rate depends on bandwidth, modulation, coding rate, number of spatial streams, and guard interval. Increasing channel width, using higher modulation, and adding spatial streams increases data rate.
+Lower guard intervals also improve throughput.
