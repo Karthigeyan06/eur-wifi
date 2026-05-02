@@ -1,0 +1,42 @@
+1. Pillars of Wi-Fi security
+
+The main pillars of Wi-Fi security are confidentiality, integrity, and authentication. Confidentiality ensures that data is encrypted and cannot be read by unauthorized users. Integrity ensures that data is not modified during transmission. Authentication verifies the identity of users and devices before granting access.
+
+2. Authentication vs Encryption in Wi-Fi
+
+Authentication is the process of verifying the identity of a user or device before allowing access to the network. Encryption is the process of converting data into a secure format so that it cannot be understood by unauthorized users. Authentication happens before data transmission, while encryption protects the data during transmission.
+
+3. Differences between WEP, WPA2, and WPA3
+
+WEP uses weak encryption (RC4) and static keys, making it insecure.
+WPA improves security using TKIP, which introduces dynamic keys but is still vulnerable.
+WPA2 uses AES-based CCMP encryption, providing strong security and is widely used.
+WPA3 enhances security further with stronger encryption, forward secrecy, and improved authentication using SAE, making it resistant to brute-force attacks.
+
+4. Why WEP is insecure
+
+WEP is insecure because it uses weak encryption (RC4), small initialization vectors, and static keys. These weaknesses allow attackers to easily capture packets and derive the encryption key, making the network vulnerable.
+
+5. Why WPA2 was introduced
+
+WPA2 was introduced to replace WPA and WEP with a more secure encryption mechanism. It uses AES-based CCMP, which provides strong data protection, better integrity, and improved overall security compared to earlier protocols.
+
+6. Role of PMK in 4-way handshake
+
+The Pairwise Master Key (PMK) is the base key used to derive the Pairwise Transient Key (PTK). During the 4-way handshake, both the client and access point use the PMK along with nonces and MAC addresses to generate the PTK, which is then used for encrypting unicast traffic.
+
+7. How 4-way handshake ensures mutual authentication
+
+The 4-way handshake ensures mutual authentication by proving that both the client and access point possess the same PMK. The exchange of nonces and the generation of matching PTKs confirm that both sides are legitimate without transmitting the actual key.
+
+8. Wrong passphrase in 4-way handshake
+
+If a wrong passphrase is used, the PMK derived by the client will not match the access point’s PMK. As a result, the PTK calculation will fail, and the handshake will not complete successfully, preventing the client from connecting to the network.
+
+9. Problem solved by 802.1X
+
+802.1X solves the problem of unauthorized access by providing port-based network access control. It ensures that only authenticated users and devices can connect to the network using centralized authentication mechanisms like RADIUS.
+
+10. How 802.1X enhances wireless security
+
+802.1X enhances security by using strong authentication methods such as EAP and integrating with authentication servers like RADIUS. It enables dynamic key generation, per-user authentication, and better control over network access, making it more secure than pre-shared key methods.
