@@ -1,0 +1,47 @@
+1. Key features of Wi-Fi 6, 6E, and 7 vs Wi-Fi 5
+
+Wi-Fi 5 (802.11ac) focuses on high throughput using wider channels and MU-MIMO in the downlink.
+Wi-Fi 6 (802.11ax) improves efficiency using OFDMA, uplink and downlink MU-MIMO, Target Wake Time, and better performance in dense environments.
+Wi-Fi 6E extends Wi-Fi 6 into the 6 GHz band, offering more spectrum, less interference, and cleaner channels.
+Wi-Fi 7 (802.11be) introduces extremely high throughput with features like 320 MHz channels, Multi-Link Operation, 4K-QAM, and reduced latency. It significantly improves both speed and reliability compared to previous generations.
+
+2. Role of OFDMA in Wi-Fi 6
+
+OFDMA divides a channel into smaller subcarriers called resource units and allows multiple users to transmit or receive data simultaneously. This reduces latency, improves spectrum efficiency, and enhances performance in high-density networks where many devices are connected.
+
+3. Benefits of Target Wake Time (TWT)
+
+TWT allows devices to schedule when they wake up to transmit or receive data. This reduces power consumption, minimizes contention, and improves battery life, especially for IoT devices that do not need constant connectivity.
+
+4. Significance of 6 GHz band in Wi-Fi 6E
+
+The 6 GHz band provides a large amount of new spectrum with wider contiguous channels. It reduces congestion, eliminates interference from legacy devices, and supports high data rates with low latency. It is ideal for modern high-bandwidth applications.
+
+5. Wi-Fi 6 vs Wi-Fi 6E (range, bandwidth, interference)
+
+Wi-Fi 6 operates in 2.4 GHz and 5 GHz bands, offering better range in 2.4 GHz and moderate interference.
+Wi-Fi 6E operates in the 6 GHz band, providing higher bandwidth and less interference but shorter range due to higher frequency and lower penetration through obstacles.
+
+6. Major innovations in Wi-Fi 7
+
+Wi-Fi 7 introduces 320 MHz channels, Multi-Link Operation (MLO), 4K-QAM modulation, enhanced OFDMA, and improved MU-MIMO. These features enable extremely high throughput, ultra-low latency, and better reliability for real-time applications like AR/VR and gaming.
+
+7. Multi-Link Operation (MLO)
+
+MLO allows a device to use multiple frequency bands or channels simultaneously for data transmission. This increases throughput, reduces latency, and improves reliability by dynamically selecting the best available link or combining multiple links.
+
+8. Purpose of 802.11k and 802.11v
+
+802.11k helps clients make better roaming decisions by providing information about neighboring access points.
+802.11v assists in network management by allowing the network to guide client devices to better access points. Together, they improve roaming efficiency and user experience.
+
+9. Fast BSS Transition (802.11r)
+
+802.11r enables faster handoff between access points by reducing authentication delay. It allows clients to reuse security credentials, minimizing latency during roaming and ensuring seamless connectivity in mobile environments.
+
+10. How 802.11k/v/r work together
+
+802.11k provides information about nearby access points.
+802.11v suggests optimal access points for the client.
+802.11r enables fast and secure transition between access points.
+Together, they ensure seamless roaming with minimal delay, better performance, and improved user experience in enterprise networks.
