@@ -1,0 +1,61 @@
+1. Significance of MAC layer and its position in OSI
+
+The MAC (Medium Access Control) layer is a sublayer of the Data Link Layer (Layer 2) in the OSI model. It is responsible for controlling how devices access the shared wireless medium. 
+It handles framing, addressing using MAC addresses, error detection, retransmissions, and medium access mechanisms like CSMA/CA. In WLAN, the MAC layer is more complex than wired networks because it must deal with collisions, hidden nodes, and mobility.
+
+2. 802.11 MAC header frame format and fields
+
+The 802.11 MAC frame consists of three main parts: MAC header, frame body, and FCS.
+The MAC header includes fields such as Frame Control, Duration/ID, Address fields (up to four addresses), Sequence Control, and optional QoS Control and HT Control.
+Frame Control defines type, subtype, and flags like retry and power management.
+Duration/ID is used for NAV (Network Allocation Vector).
+Address fields specify source, destination, transmitter, and receiver.
+Sequence Control helps in ordering and retransmission.
+FCS is used for error detection.
+
+3. MAC layer functionalities (Management, Control, Data)
+
+Management functions include scanning, authentication, association, and synchronization.
+Control functions include RTS/CTS, ACK, Block ACK, and power-saving mechanisms.
+Data functions involve encapsulation and delivery of payload data, fragmentation, reassembly, and QoS handling. These together ensure reliable and efficient communication.
+
+4. Scanning process and its types
+
+Scanning is the process by which a client discovers available wireless networks.
+There are two types: passive scanning and active scanning.
+In passive scanning, the client listens for beacon frames sent periodically by access points.
+In active scanning, the client sends probe requests and access points respond with probe responses. Active scanning is faster but consumes more power.
+
+5. Client association process
+
+The client first performs scanning to discover networks. It then selects an access point and performs authentication. After successful authentication, the client sends an association request.
+The access point responds with an association response, allocating resources and assigning an Association ID. Once associated, the client can exchange data.
+
+6. EAPOL 4-way handshake
+
+The 4-way handshake is used to establish secure communication using WPA/WPA2.
+Message 1: Access point sends ANonce to the client.
+Message 2: Client generates SNonce and derives PTK using PMK, ANonce, SNonce, and MAC addresses, then sends SNonce to AP.
+Message 3: AP derives PTK and sends GTK encrypted to client.
+Message 4: Client acknowledges and installs keys.
+Keys involved include PMK (master key), PTK (pairwise key for unicast), and GTK (group key for broadcast/multicast).
+
+7. Power saving in MAC layer
+
+Power saving allows devices to conserve battery by entering sleep mode. The access point buffers frames for sleeping clients. Clients periodically wake up to check beacon frames for Traffic Indication Map (TIM).
+Types include legacy power save mode and advanced mechanisms like U-APSD (Unscheduled Automatic Power Save Delivery), which improves efficiency for real-time applications.
+
+8. Medium Access Control methodologies
+
+The primary method is CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance). Devices sense the channel before transmitting and use random backoff timers to avoid collisions. RTS/CTS can be used to reduce hidden node problems.
+Unlike wired networks, collision detection is not feasible in wireless, so avoidance is used.
+
+9. Block ACK mechanism and advantages
+
+Block ACK allows multiple frames to be acknowledged with a single acknowledgment frame instead of individual ACKs. This reduces overhead, improves throughput, and is especially useful in high data rate transmissions and aggregation scenarios.
+
+10. A-MSDU, A-MPDU, and A-MSDU in A-MPDU
+
+A-MSDU (Aggregated MAC Service Data Unit) combines multiple MSDUs into a single MPDU payload, reducing header overhead.
+A-MPDU (Aggregated MAC Protocol Data Unit) aggregates multiple MPDUs into one transmission, each with its own header and CRC.
+A-MSDU in A-MPDU is a hybrid approach where multiple MSDUs are first aggregated into A-MSDUs and then multiple A-MSDUs are aggregated into A-MPDU, maximizing efficiency.
